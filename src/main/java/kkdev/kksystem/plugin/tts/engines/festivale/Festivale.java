@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kkdev.kksystem.plugin.tts;
-
-import kkdev.kksystem.plugin.tts.manager.TTSManager;
-
-
+package kkdev.kksystem.plugin.tts.engines.festivale;
 
 /**
  *
  * @author blinov_is
  */
-public abstract class Global {
-    public static TTSManager TM;
+public class Festivale {
+    
 }

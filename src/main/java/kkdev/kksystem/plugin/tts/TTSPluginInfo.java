@@ -16,7 +16,7 @@ import kkdev.kksystem.base.constants.PluginConsts;
  *
  * @author blinov_is e
  */
-public class RSPluginInfo  implements IPluginInfoRequest {
+public class TTSPluginInfo  implements IPluginInfoRequest {
     @Override
     public PluginInfo GetPluginInfo()
     {
