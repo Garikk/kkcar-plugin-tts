@@ -14,7 +14,8 @@ import kkdev.kksystem.base.constants.SystemConsts;
  */
 public class TTSConfig  extends ExternalConfiguration {
     public enum TTS_Engines {
-        TTS_ENG_FESTIVALE
+        TTS_ENG_FESTIVALE,
+        TTS_ENG_MARYTTS
     }
     
     

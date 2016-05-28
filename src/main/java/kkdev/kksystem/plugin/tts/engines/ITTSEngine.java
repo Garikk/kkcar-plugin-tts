@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kkdev.kksystem.plugin.tts.engines.festivale;
+package kkdev.kksystem.plugin.tts.engines;
 
 /**
  *
- * @author blinov_is
+ * @author sayma_000
  */
-public class Festivale {
-    
+public interface ITTSEngine {
+    public void SayText(String Text);
 }
