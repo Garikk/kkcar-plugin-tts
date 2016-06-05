@@ -11,7 +11,8 @@ import kkdev.kksystem.base.constants.SystemConsts;
 import kkdev.kksystem.plugin.tts.KKPlugin;
 import kkdev.kksystem.plugin.tts.configuration.PluginSettings;
 import kkdev.kksystem.plugin.tts.engines.ITTSEngine;
-import kkdev.kksystem.plugin.tts.engines.marytts.MaryTTS;
+import kkdev.kksystem.plugin.tts.engines.externalttsserver.ExternalTTS;
+import kkdev.kksystem.plugin.tts.engines.festival_simple.Festival_Simple;
 
 public class TTSManager extends PluginManagerBase {
     
@@ -22,7 +23,7 @@ public class TTSManager extends PluginManagerBase {
         //
     }
     public void Start() {
-        Engine=new MaryTTS();
+        Engine=new Festival_Simple();
     }
     
    
