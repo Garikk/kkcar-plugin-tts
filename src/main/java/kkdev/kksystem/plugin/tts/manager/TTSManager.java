@@ -33,8 +33,6 @@ public class TTSManager extends PluginManagerBase {
         if (!Msg.PinName.equals(PluginConsts.KK_PLUGIN_BASE_NOTIFY_DATA)) 
             return;
         
-        
-        
         PinNotifyData PD=(PinNotifyData)Msg.PinData; 
         
         for (NOTIFY_METHOD NM:PD.NotifyMethod)

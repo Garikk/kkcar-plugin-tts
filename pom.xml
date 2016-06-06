@@ -11,17 +11,6 @@
             <artifactId>base</artifactId>
             <version>1.0</version>
         </dependency>
-        <dependency>
-            <groupId>de.dfki.mary</groupId>
-            <artifactId>voice-cmu-slt-hsmm</artifactId>
-            <version>5.2-beta3</version>
-        </dependency>	
-        <dependency>
-            <groupId>de.dfki.mary</groupId>
-            <artifactId>marytts-lang-en</artifactId>
-            <version>5.2-beta3</version>
-            <scope>runtime</scope>
-        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
