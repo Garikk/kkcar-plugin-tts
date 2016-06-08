@@ -13,7 +13,7 @@ public class TTSManager extends PluginManagerBase {
     Festival_Simple Engine;
 
     public void Init(KKPlugin Conn) {
-        this.Connector = Conn;
+        this.connector = Conn;
         //
     }
     public void Start() {
@@ -29,9 +29,9 @@ public class TTSManager extends PluginManagerBase {
         
         PinNotifyData PD=(PinNotifyData)Msg.PinData; 
         
-        for (NOTIFY_METHOD NM:PD.NotifyMethod)
+        for (NOTIFY_METHOD NM:PD.notifyMethod)
             if (NM==NOTIFY_METHOD.VOICE)
-                Engine.SayText(PD.NotifyText);
+                Engine.SayText(PD.notifyText);
             
 
 

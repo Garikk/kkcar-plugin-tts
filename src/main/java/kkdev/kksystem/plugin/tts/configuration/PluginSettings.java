@@ -27,12 +27,12 @@ public abstract class PluginSettings {
         
         
        // System.out.println("[BT][CONFIG] Load configuration");
-        MainConfiguration=(TTSConfig)Settings.LoadConfig();
+        MainConfiguration=(TTSConfig)Settings.loadConfig();
 
         if (MainConfiguration == null) {
             System.out.println("[TTS][CONFIG] Error Load configuration, try create default config");
-            Settings.SaveConfig(kk_DefaultConfig.MakeDefaultConfig());
-            MainConfiguration=(TTSConfig)Settings.LoadConfig();
+            Settings.saveConfig(kk_DefaultConfig.MakeDefaultConfig());
+            MainConfiguration=(TTSConfig)Settings.loadConfig();
         }
         if (MainConfiguration == null) {
             System.out.println("[TTS][CONFIG] Load configuration, fatal");
