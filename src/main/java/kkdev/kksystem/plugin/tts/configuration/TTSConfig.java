@@ -13,12 +13,26 @@ import kkdev.kksystem.base.constants.SystemConsts;
  * @author blinov_is
  */
 public class TTSConfig  extends ExternalConfiguration {
+
+    /**
+     *
+     */
     public enum TTS_Engines {
+
+        /**
+         *
+         */
         TTS_ENG_FESTIVALE,
+
+        /**
+         *
+         */
         TTS_ENG_MARYTTS
     }
     
-    
+    /**
+     *
+     */
     public TTSConf TTSConfigurations;
 
 }

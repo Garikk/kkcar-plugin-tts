@@ -13,6 +13,11 @@ package kkdev.kksystem.plugin.tts.configuration;
  * 
  */
 public abstract class kk_DefaultConfig {
+
+    /**
+     *
+     * @return
+     */
     public static TTSConfig MakeDefaultConfig() {
         
         TTSConfig DefConf = new TTSConfig();

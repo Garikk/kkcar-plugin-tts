@@ -10,7 +10,19 @@ package kkdev.kksystem.plugin.tts.configuration;
  * @author blinov_is
  */
 public class TTSConf {
+
+    /**
+     *
+     */
     public String[] FeatureID;
+
+    /**
+     *
+     */
     public String[] ContextID;
+
+    /**
+     *
+     */
     public TTSConfig.TTS_Engines Engine;
 }

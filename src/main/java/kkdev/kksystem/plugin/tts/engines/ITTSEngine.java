@@ -10,5 +10,10 @@ package kkdev.kksystem.plugin.tts.engines;
  * @author sayma_000
  */
 public interface ITTSEngine {
+
+    /**
+     *
+     * @param Text
+     */
     public void SayText(String Text);
 }

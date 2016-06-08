@@ -18,11 +18,20 @@ import kkdev.kksystem.plugin.tts.manager.TTSManager;
  * @author blinov_is
  */
 public final class KKPlugin extends KKPluginBase {
+
+    /**
+     * Default constructor
+     */
     public KKPlugin() {
         super(new TTSPluginInfo());
         Global.TM=new TTSManager();
     }
 
+    /**
+     *
+     * @param BaseConnector
+     * @param GlobalConfUID
+     */
     @Override
     public void pluginInit(IPluginBaseInterface BaseConnector, String GlobalConfUID) {
         super.pluginInit(BaseConnector, GlobalConfUID);
@@ -30,7 +39,11 @@ public final class KKPlugin extends KKPluginBase {
         Global.TM.Init(this);
     }
 
-    
+    /**
+     *
+     * @param Pin
+     * @return
+     */
     @Override
     public PluginMessage executePin(PluginMessage Pin) {
         super.executePin(Pin);
@@ -38,8 +51,10 @@ public final class KKPlugin extends KKPluginBase {
         return null;
     }
     
-    
-     @Override
+    /**
+     *
+     */
+    @Override
     public void pluginStart() {
          super.pluginStart();
          Global.TM.Start();

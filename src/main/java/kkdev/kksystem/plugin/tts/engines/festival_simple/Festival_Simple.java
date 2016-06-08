@@ -45,10 +45,17 @@ public class Festival_Simple {
         }
     });
 
+    /**
+     *
+     */
     public Festival_Simple() {
         SayQueue = new ArrayDeque<>();
     }
 
+    /**
+     *
+     * @param Text
+     */
     public void SayText(String Text) {
         SayQueue.add(Text);
         if (!Start)

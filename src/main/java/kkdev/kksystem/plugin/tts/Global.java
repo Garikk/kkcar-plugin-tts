@@ -14,5 +14,9 @@ import kkdev.kksystem.plugin.tts.manager.TTSManager;
  * @author blinov_is
  */
 public abstract class Global {
+
+    /**
+     *
+     */
     public static TTSManager TM;
 }

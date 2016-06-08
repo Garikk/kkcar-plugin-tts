@@ -13,13 +13,27 @@ import kkdev.kksystem.base.classes.plugins.simple.SettingsManager;
  */
 public abstract class PluginSettings {
 
-   public static  String RS_CONF;
+    /**
+     *
+     */
+    public static  String RS_CONF;
    private static SettingsManager Settings;
 
-   public String FeatureID;
+    /**
+     *
+     */
+    public String FeatureID;
    
+    /**
+     *
+     */
     public static TTSConfig MainConfiguration;
 
+    /**
+     *
+     * @param GlobalConfigUID
+     * @param MyUID
+     */
     public static void InitConfig(String GlobalConfigUID, String MyUID) {
          RS_CONF=GlobalConfigUID+"_"+MyUID + ".json";
         

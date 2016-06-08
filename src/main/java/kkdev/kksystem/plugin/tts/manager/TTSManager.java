@@ -8,21 +8,34 @@ import kkdev.kksystem.base.constants.PluginConsts;
 import kkdev.kksystem.plugin.tts.KKPlugin;
 import kkdev.kksystem.plugin.tts.engines.festival_simple.Festival_Simple;
 
+/**
+ *
+ * @author blinov_is
+ */
 public class TTSManager extends PluginManagerBase {
     
     Festival_Simple Engine;
 
+    /**
+     *
+     * @param Conn
+     */
     public void Init(KKPlugin Conn) {
         this.connector = Conn;
         //
     }
+
+    /**
+     *
+     */
     public void Start() {
         Engine=new Festival_Simple();
     }
     
-   
-    
-    
+    /**
+     *
+     * @param Msg
+     */
     public void ReceivePIN(PluginMessage Msg) {
         if (!Msg.PinName.equals(PluginConsts.KK_PLUGIN_BASE_NOTIFY_DATA)) 
             return;
