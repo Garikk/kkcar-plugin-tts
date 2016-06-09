@@ -18,5 +18,5 @@ public abstract class Global {
     /**
      *
      */
-    public static TTSManager TM;
+    protected static TTSManager TM;
 }
