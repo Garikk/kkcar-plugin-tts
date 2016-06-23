@@ -1,7 +1,7 @@
 package kkdev.kksystem.plugin.tts.manager;
 
 import kkdev.kksystem.base.classes.notify.NotifyConsts.NOTIFY_METHOD;
-import kkdev.kksystem.base.classes.notify.PinNotifyData;
+import kkdev.kksystem.base.classes.notify.PinDataNotify;
 import kkdev.kksystem.base.classes.plugins.PluginMessage;
 import kkdev.kksystem.base.classes.plugins.simple.managers.PluginManagerBase;
 import kkdev.kksystem.base.constants.PluginConsts;
@@ -37,10 +37,11 @@ public class TTSManager extends PluginManagerBase {
      * @param Msg
      */
     public void ReceivePIN(PluginMessage Msg) {
-        if (!Msg.PinName.equals(PluginConsts.KK_PLUGIN_BASE_NOTIFY_DATA)) 
+        
+        if (!Msg.pinName.equals(PluginConsts.KK_PLUGIN_BASE_NOTIFY_DATA)) 
             return;
         
-        PinNotifyData PD=(PinNotifyData)Msg.PinData; 
+        PinDataNotify PD=(PinDataNotify)Msg.getPinData(); 
         
         for (NOTIFY_METHOD NM:PD.notifyMethod)
             if (NM==NOTIFY_METHOD.VOICE)
