@@ -21,8 +21,8 @@ public class TTSManager extends PluginManagerBase {
      * @param Conn
      */
     public void Init(KKPlugin Conn) {
-        this.connector = Conn;
-        //
+        this.setPluginConnector(Conn);
+         //
     }
 
     /**
