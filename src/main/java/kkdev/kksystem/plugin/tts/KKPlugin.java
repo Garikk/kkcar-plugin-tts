@@ -45,10 +45,9 @@ public final class KKPlugin extends KKPluginBase {
      * @return
      */
     @Override
-    public PluginMessage executePin(PluginMessage Pin) {
+    public void executePin(PluginMessage Pin) {
         super.executePin(Pin);
         Global.TM.ReceivePIN(Pin);
-        return null;
     }
     
     /**
