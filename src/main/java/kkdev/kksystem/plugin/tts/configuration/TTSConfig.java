@@ -5,14 +5,14 @@
  */
 package kkdev.kksystem.plugin.tts.configuration;
 
-import kkdev.kksystem.base.classes.plugins.ExternalConfiguration;
+import kkdev.kksystem.base.classes.plugins.PluginConfiguration;
 import kkdev.kksystem.base.constants.SystemConsts;
 
 /**
  *
  * @author blinov_is
  */
-public class TTSConfig  extends ExternalConfiguration {
+public class TTSConfig  extends PluginConfiguration {
 
     /**
      *
