@@ -1,5 +1,6 @@
 package kkdev.kksystem.plugin.tts;
 
+import kkdev.kksystem.base.classes.plugins.PluginConfiguration;
 import kkdev.kksystem.base.classes.plugins.PluginMessage;
 import kkdev.kksystem.base.classes.plugins.simple.KKPluginBase;
 import kkdev.kksystem.base.interfaces.IPluginBaseInterface;
@@ -18,6 +19,17 @@ import kkdev.kksystem.plugin.tts.manager.TTSManager;
  * @author blinov_is
  */
 public final class KKPlugin extends KKPluginBase {
+
+    @Override
+    public void setQuickParameter(String Name, boolean Value) {
+        super.setQuickParameter(Name, Value); 
+        PluginSettings.MainConfiguration.setParameterBool(Name, Value);
+    }
+
+    @Override
+    public PluginConfiguration getQuickParameters() {
+        return PluginSettings.MainConfiguration;
+    }
 
     /**
      * Default constructor
