@@ -5,11 +5,12 @@
  */
 package kkdev.kksystem.plugin.tts.configuration;
 
+
 /**
  *
  * @author blinov_is
  */
-public enum QuickParameterTypes {
+public enum TTSQuickParameters {
     BOOL_USE_NARRATOR("USE_NARRATOR"),
     BOOL_USE_NARRATOR_SYSTEM_INFO("USE_NARRATOR_SYSTEM_INFO"),
     BOOL_USE_NARRATOR_SYSTEM_WARN("USE_NARRATOR_SYSTEM_WARN"),
@@ -22,16 +23,16 @@ public enum QuickParameterTypes {
     
     String myValue;
 
-    QuickParameterTypes(String myVal) {
+    TTSQuickParameters(String myVal) {
         myValue = myVal;
     }
     public String getValue()
     {
         return myValue;
     }
-  public static QuickParameterTypes fromString(String text) {
+  public static TTSQuickParameters fromString(String text) {
     if (text != null) {
-      for (QuickParameterTypes b : QuickParameterTypes.values()) {
+      for (TTSQuickParameters b : TTSQuickParameters.values()) {
         if (text.equalsIgnoreCase(b.myValue)) {
           return b;
         }
