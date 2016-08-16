@@ -34,15 +34,14 @@ public class TTSConfig extends PluginConfiguration {
          */
         TTS_ENG_FESTIVALE
     }
-
     public TTSConf TTSConfigurations;
 
     public void initQuickParameters() {
         int i=0;
-        pluginQuickParameters=new QuickParameterInfo[PluginSettings.MainConfiguration.getParametrsBoolean().length];
-        for (String name : PluginSettings.MainConfiguration.getParametrsBoolean()) {
+        pluginQuickParameters=new QuickParameterInfo[PluginSettings.MainConfiguration.getParametersBoolean().size()];
+        for (String name : PluginSettings.MainConfiguration.getParametersBoolean()) {
             setLocalQuickParameter(name, PluginSettings.MainConfiguration.getParameterBoolean(name));
-            pluginQuickParameters=new QuickParameterInfo[i];
+            pluginQuickParameters[i]=new QuickParameterInfo();
             pluginQuickParameters[i].Name=name;
             pluginQuickParameters[i].Description=name;
             i++;
@@ -53,7 +52,6 @@ public class TTSConfig extends PluginConfiguration {
     public void setParameterBool(String Name, Boolean Value) {
         super.setParameterBool(Name, Value);
         setLocalQuickParameter(Name, Value);
-
     }
 
     @Override
