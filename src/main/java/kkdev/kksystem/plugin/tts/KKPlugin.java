@@ -3,9 +3,9 @@ package kkdev.kksystem.plugin.tts;
 import kkdev.kksystem.base.classes.plugins.PluginConfiguration;
 import kkdev.kksystem.base.classes.plugins.PluginMessage;
 import kkdev.kksystem.base.classes.plugins.simple.KKPluginBase;
-import kkdev.kksystem.base.interfaces.IPluginBaseInterface;
 import kkdev.kksystem.plugin.tts.configuration.PluginSettings;
 import kkdev.kksystem.plugin.tts.manager.TTSManager;
+import kkdev.kksystem.base.interfaces.IPluginBaseConnection;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -45,7 +45,7 @@ public final class KKPlugin extends KKPluginBase {
      * @param GlobalConfUID
      */
     @Override
-    public void pluginInit(IPluginBaseInterface BaseConnector, String GlobalConfUID) {
+    public void pluginInit(IPluginBaseConnection BaseConnector, String GlobalConfUID) {
         super.pluginInit(BaseConnector, GlobalConfUID);
         PluginSettings.InitConfig(this.globalConfID, this.pluginInfo.getPluginInfo().PluginUUID);
         Global.TM.Init(this);
