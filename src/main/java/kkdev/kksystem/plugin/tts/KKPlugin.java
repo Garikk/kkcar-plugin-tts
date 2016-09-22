@@ -20,16 +20,6 @@ import kkdev.kksystem.base.interfaces.IPluginBaseConnection;
  */
 public final class KKPlugin extends KKPluginBase {
 
-    @Override
-    public void setQuickParameter(String Name, boolean Value) {
-        super.setQuickParameter(Name, Value); 
-        PluginSettings.MainConfiguration.setParameterBool(Name, Value);
-    }
-
-    @Override
-    public PluginConfiguration getQuickParameters() {
-        return PluginSettings.MainConfiguration;
-    }
 
     /**
      * Default constructor

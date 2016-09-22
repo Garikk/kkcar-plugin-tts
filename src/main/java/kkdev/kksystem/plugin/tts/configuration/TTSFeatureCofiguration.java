@@ -9,7 +9,7 @@ package kkdev.kksystem.plugin.tts.configuration;
  *
  * @author blinov_is
  */
-public class TTSConf {
+public class TTSFeatureCofiguration {
 
     /**
      *
@@ -24,5 +24,5 @@ public class TTSConf {
     /**
      *
      */
-    public TTSConfig.TTS_Engines Engine;
+    public TTSConfiguration.TTS_Engines Engine;
 }
