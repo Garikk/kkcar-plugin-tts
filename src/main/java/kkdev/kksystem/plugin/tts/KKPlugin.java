@@ -61,4 +61,9 @@ public final class KKPlugin extends KKPluginBase {
          Global.TM.Start();
     }
 
+    @Override
+    public PluginConfiguration getPluginSettings() {
+       return PluginSettings.MainConfiguration;
+    }
+
 }
