@@ -1,5 +1,6 @@
 package kkdev.kksystem.plugin.tts.manager;
 
+import kkdev.kksystem.base.classes.base.PinDataSystemOperations;
 import kkdev.kksystem.base.classes.notify.NotifyConsts.NOTIFY_METHOD;
 import kkdev.kksystem.base.classes.notify.NotifyConsts.NOTIFY_TYPE;
 import kkdev.kksystem.base.classes.notify.PinDataNotify;
@@ -38,6 +39,11 @@ public class TTSManager extends PluginManagerBase {
      * @param Msg
      */
     public void ReceivePIN(PluginMessage Msg) {
+        if (Msg.pinName.equals(PluginConsts.KK_PLUGIN_BASE_PIN_SYSTEMOPERATION))
+        {
+            processSystemOperationPin(Msg);
+        }
+        
         if (!PluginSettings.MainConfiguration.useNarrator)
             return;
         
@@ -54,6 +60,21 @@ public class TTSManager extends PluginManagerBase {
             {
                 Engine.SayText(PD.notifyText);
             }
+    }
+    
+    private void processSystemOperationPin(PluginMessage Msg)
+    {
+        PinDataSystemOperations SA=(PinDataSystemOperations)Msg.getPinData();
+        //
+        if (SA.CommandType.equals(PinDataSystemOperations.SystemOperationsCommand.SYSTEM_CHANGE_MANAGEDPARAMETER))
+        {
+            
+        }
+        
+    }
+    
+    private void changeManagedParameter(String Parameter,Object value)
+    {
     }
     
     private boolean checkNarratorActive(NOTIFY_TYPE NotifyType)

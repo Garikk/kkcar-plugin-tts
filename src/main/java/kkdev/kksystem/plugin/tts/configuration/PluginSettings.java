@@ -11,7 +11,7 @@ import kkdev.kksystem.base.classes.plugins.simple.SettingsManager;
  *
  * @author blinov_is
  */
-public abstract class PluginSettings {
+public final class PluginSettings {
 
     /**
      *
@@ -52,5 +52,10 @@ public abstract class PluginSettings {
             return;
         }
         //
+    }
+    
+    public static void setManagedParameter(String ParameterName,Object value)
+    {
+        Settings.setManagedParameterValue__BoolOnly(MainConfiguration, ParameterName, value);
     }
 }
