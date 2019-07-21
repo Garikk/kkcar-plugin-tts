@@ -19,9 +19,7 @@ public abstract class kk_DefaultConfig {
      * @return
      */
     public static TTSConfiguration MakeDefaultConfig() {
-        
-        TTSConfiguration DefConf = new TTSConfiguration();
-       
-        return DefConf;
+
+        return new TTSConfiguration();
     }
 }

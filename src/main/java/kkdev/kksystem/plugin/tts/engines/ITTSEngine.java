@@ -15,5 +15,5 @@ public interface ITTSEngine {
      *
      * @param Text
      */
-    public void SayText(String Text);
+    void SayText(String Text);
 }
