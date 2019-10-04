@@ -58,7 +58,7 @@ public class TTSManager extends PluginManagerBase {
         for (NOTIFY_METHOD NM:PD.notifyMethod)
             if (NM.equals(NOTIFY_METHOD.VOICE))
             {
-                Engine.SayText(PD.notifyText);
+                Engine.SayText(PD.notifyText.get(0)[0]);
             }
     }
     
